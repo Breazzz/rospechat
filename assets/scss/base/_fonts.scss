@@ -1,0 +1,18 @@
+@import url(../fonts/ProximaNova/stylesheet.css);
+@import url(../fonts/Flaticon/font/flaticon.css);
+
+
+$proxima: 'ProximaNova';
+
+@mixin font-family($font) {
+    font-family: $font, sans-serif;
+}
+
+@mixin proxima($weight:400, $style:normal) {
+   @include font-family ($proxima);
+   font-weight: $weight;
+   font-style: $style;
+}
+
+
+// @include proxima(400);
